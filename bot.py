@@ -20,8 +20,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Конфигурация бота
-BOT_TOKEN = "TOKEN"  # Замените на ваш токен
-ADMIN_ID =   # ID администратора
+BOT_TOKEN = "7594932795:AAG61mzFQ3NmX0NmNm3fLU0XZnj_G2WTYtw"  # Замените на ваш токен
+ADMIN_ID = "5479326495" # ID администратора
 VALUTE = "TON"  # По умолчанию валюта - TON
 
 # Хранение данных
