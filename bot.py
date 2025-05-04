@@ -273,7 +273,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
             context.user_data['awaiting_amount'] = True  # Устанавливаем флаг ожидания суммы
 
         elif data == 'referral':
-            referral_link = f"https://t.me/GltfEIfbot?start={user_id}"
+            referral_link = f"https://t.me/giftsotcrobot?start={user_id}"
             await context.bot.send_message(
                 chat_id,
                 get_text(lang, "referral_message", referral_link=referral_link, valute=VALUTE),
@@ -441,7 +441,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             context.user_data.clear()
            
             await update.message.reply_text(
-                get_text(lang, "deal_created_message", amount=deals[deal_id]['amount'], valute=VALUTE, description=deals[deal_id]['description'], deal_link=f"https://t.me/GltfEIfbot?start={deal_id}"),
+                get_text(lang, "deal_created_message", amount=deals[deal_id]['amount'], valute=VALUTE, description=deals[deal_id]['description'], deal_link=f"https://t.me/giftsotcrobot?start={deal_id}"),
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(get_text(lang, "menu_button"), callback_data='menu')]])
             )
             # Уведомление админу
